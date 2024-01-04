@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismKit", "PrismKit\PrismKit.csproj", "{2A0968EE-7AAC-4A11-A8A1-E79BC7CD946F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossUtility", "..\CrossUtility\src\CrossUtility.csproj", "{17091736-C3B4-4769-9084-8752B4BFE049}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A0968EE-7AAC-4A11-A8A1-E79BC7CD946F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A0968EE-7AAC-4A11-A8A1-E79BC7CD946F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A0968EE-7AAC-4A11-A8A1-E79BC7CD946F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A0968EE-7AAC-4A11-A8A1-E79BC7CD946F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD46857B-54C6-4856-A12B-1603BBEE1173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD46857B-54C6-4856-A12B-1603BBEE1173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD46857B-54C6-4856-A12B-1603BBEE1173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD46857B-54C6-4856-A12B-1603BBEE1173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17091736-C3B4-4769-9084-8752B4BFE049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17091736-C3B4-4769-9084-8752B4BFE049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17091736-C3B4-4769-9084-8752B4BFE049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17091736-C3B4-4769-9084-8752B4BFE049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
