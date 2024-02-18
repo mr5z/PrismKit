@@ -1,5 +1,4 @@
-﻿using MauiUtility.Extensions.Navigations;
-using PrismKit.Extensions.Navigations;
+﻿using PrismKit.Extensions.Navigations;
 
 namespace PrismKit.Exceptions;
 
