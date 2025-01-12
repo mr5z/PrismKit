@@ -13,7 +13,7 @@ public class ViewModelMetadata
 
         PageType = pageType;
         RequiresAuthentication = AuthenticationInfo();
-        Roles = RolesInfo();
+        Roles = RolesInfo;
     }
 
     public Type PageType { get; }
@@ -27,10 +27,13 @@ public class ViewModelMetadata
         return attribute?.IsRequired ?? false;
     }
 
-    private IReadOnlyList<string> RolesInfo()
+    private IReadOnlyList<string> RolesInfo
     {
-        var attribute = PageType.GetCustomAttribute<RequiresRoleAttribute>();
-        var roles = attribute?.Roles.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        return new List<string>(roles ?? Enumerable.Empty<string>());
+        get
+        {
+            var attribute = PageType.GetCustomAttribute<RequiresRoleAttribute>();
+            var roles = attribute?.Roles.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            return new List<string>(roles ?? Enumerable.Empty<string>());
+        }
     }
 }

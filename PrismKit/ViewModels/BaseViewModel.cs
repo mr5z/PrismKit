@@ -2,9 +2,14 @@
 
 namespace PrismKit.ViewModels;
 
-public class BaseViewModel: BindableBase, INavigationAware, IInitialize, IInitializeAsync
+public class BaseViewModel: INavigatedAware, IInitialize, IInitializeAsync
 {
     protected virtual void OnPageLoaded(INavigationParameters parameters)
+    {
+
+    }
+
+    protected virtual void OnPageUnloaded(INavigationParameters parameters)
     {
 
     }
@@ -21,7 +26,12 @@ public class BaseViewModel: BindableBase, INavigationAware, IInitialize, IInitia
 
     public void OnNavigatedFrom(INavigationParameters parameters)
     {
+        var mode = parameters.GetNavigationMode();
 
+        if (mode == NavigationMode.Back)
+        {
+            OnPageUnloaded(parameters);
+        }
     }
 
     public void OnNavigatedTo(INavigationParameters parameters)
@@ -29,6 +39,8 @@ public class BaseViewModel: BindableBase, INavigationAware, IInitialize, IInitia
         var mode = parameters.GetNavigationMode();
 
         if (mode == NavigationMode.New)
+        {
             OnPageLoaded(parameters);
+        }
     }
 }
